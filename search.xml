@@ -60,7 +60,7 @@
       <link href="/2023/02/14/%E5%85%94%E5%B9%B4%E5%BF%AB%E4%B9%90/"/>
       <url>/2023/02/14/%E5%85%94%E5%B9%B4%E5%BF%AB%E4%B9%90/</url>
       
-        <content type="html"><![CDATA[<h2 id="辜勇老师好，之前github那个号找不着邮箱了，就新弄了个"><a href="#辜勇老师好，之前github那个号找不着邮箱了，就新弄了个" class="headerlink" title="辜勇老师好，之前github那个号找不着邮箱了，就新弄了个"></a>辜勇老师好，之前github那个号找不着邮箱了，就新弄了个</h2><ul><li><ol start="2"><li>本人的信息：王彦硕 0204427</li></ol></li><li><ol start="3"><li>网站介绍：Jinnno的个人博客，选题目的是记录考研笔记</li></ol></li><li><ol start="4"><li>网站设计：内容版块分为首页、时间轴、标签、分类、友链和清单（待完善）</li></ol></li><li><ol start="5"><li>网站内容：学习笔记<br>1）用到的主要技术、工具：VScode、hexo、GithubPages等</li></ol></li></ul>]]></content>
+        <content type="html"><![CDATA[<h2 id="辜勇老师好，之前github那个号找不着邮箱了，就新弄了个"><a href="#辜勇老师好，之前github那个号找不着邮箱了，就新弄了个" class="headerlink" title="辜勇老师好，之前github那个号找不着邮箱了，就新弄了个"></a>辜勇老师好，之前github那个号找不着邮箱了，就新弄了个</h2><ul><li><ol start="2"><li>本人的信息：王彦硕 0204427</li></ol></li><li><ol start="3"><li>网站介绍：Jinnno的个人博客，选题目的是记录考研笔记</li></ol></li><li><ol start="4"><li>网站设计：内容版块分为首页、时间轴、标签、友链、清单、分类（待完善），采用了响应式布局</li></ol></li><li><ol start="5"><li>网站内容：学习笔记<br>1）用到的主要技术、工具：VScode、hexo、GithubPages等</li></ol></li></ul>]]></content>
       
       
       
@@ -105,6 +105,17 @@
     
     
     <entry>
+      <title>关于</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>电影</title>
       <link href="/movies/index.html"/>
       <url>/movies/index.html</url>
@@ -116,9 +127,9 @@
     
     
     <entry>
-      <title>关于</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
+      <title>tags</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -132,17 +143,6 @@
       <url>/imges/index.html</url>
       
         <content type="html"><![CDATA[<div class="gallery-group-main">  <figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://source.fomal.cc/img/default_cover_61.webp' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">封面专区</div>  <p>本站用作文章封面的图片，不保证分辨率</p>  <a href='/box/Gallery/photo'></a>  </figcaption>  </figure>    <figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://source.fomal.cc/img/dm11.webp' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">背景专区</div>  <p>收藏的一些的背景与壁纸，分辨率很高</p>  <a href='/box/Gallery/wallpaper'></a>  </figcaption>  </figure>  </div>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>tags</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
