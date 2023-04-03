@@ -8,15 +8,25 @@
       <link href="/2023/04/03/Python%E5%B8%B8%E7%94%A8%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
       <url>/2023/04/03/Python%E5%B8%B8%E7%94%A8%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</url>
       
-        <content type="html"><![CDATA[<h2 id="神乃シズクのPython学习之路"><a href="#神乃シズクのPython学习之路" class="headerlink" title="神乃シズクのPython学习之路"></a>神乃シズクのPython学习之路</h2><img src="/img/Python/Python.png"><h1><p>Python常用数据结构<br>    列表<br>        定义、创建和删除<br>            创建<br>                a_list = []\nb_list = [20, “张三”, 177.6]\nc_list = list(range(10))\nprint(a_list)\nprint(b_list)\nprint(c_list)\n\n\n\n\n\n<br>                    输出结果<br>                        直接用[]创建<br>                        使用list()函数将元组、range对象、字符串转换为列表<br>            删除<br>                通过del命令删除列表<br>                    a_list = [1,2,3]\ndel a_list<br>        元素的访问<br>            创建列表时，将会开辟一块连续空间<br>                正向索引<br>                    0，1，2，3…<br>                反向索引<br>                    -1，-2，-3，-4…<br>                a_list = list(range(2,10))\nprint(a_list)\nprint(a_list[6])\nprint(a_list[-2])\nls = [2022,”bat”,[10,’软件工程’],2023]\nprint(ls[2][-1][0])<br>                    输出结果<br>        切片操作<br>            a_list = list(range(1,10))\nprint(a_list[::1])\nprint(a_list[:1:])\nprint(a_list[1::])\nprint(a_list[::-1])\nprint(a_list[:-1:])\nprint(a_list[-1::])\nprint(a_list[::])<br>                输出结果<br>                    输入代码解释<br>        内容的修改操作<br>            对单个元素进行修改<br>                a_list = list(range(1,10))\na_list[2]=”ABC”\nprint(a_list)\na_list[4]=[11,12,13,14]\nprint(a_list)<br>                    输出结果<br>            对某个连续区域进行修改<br>                a_list=list(range(1,10))\na_list[1:6]=[15,20,25,45,80]\nprint(a_list)<br>                    输出结果<br>                a_list=list(range(1,10))\na_list[1:3]=[15,20,25,45,80]\nprint(a_list)<br>                    输出结果<br>                a_list = list(range(1, 10))\na_list[1:6:2] = [15,20,25]\nprint(a_list)<br>                    输出结果<br>        常见方法<br>            index(object)<br>                获取列表中某个对象第一次出现的位置，不存在时报错ValueError<br>                    a_list=[3,5,7,3,6,2,9,6,8,4,3]\nprint(a_list.index(6))\nprint(a_list.index(6,5,-1))<br>                        输出结果<br>                        index（value,start,end）<br>            count(object)<br>                统计列表中某个对象出现的次数，不存在时返回0<br>                    a_list=[3,5,7,3,6,2,9,6,8,4,3]\nprint(a_list.count(6))<br>                        输出结果<br>            append(object)<br>                在列表的末尾添加一个对象<br>                    a_list=[3,5,7,3,6,2,9,6,8,4,3]\na_list.append([33,44,55])\nprint(a_list)<br>                        输出结果<br>            extend(iterable)<br>                将一个可迭代对象合并到列表中去，注意和append()方法的区别<br>                    a_list=[3,5,7,3,6,2,9,6,8,4,3]\na_list.extend([33,44,55])\nprint(a_list)<br>                        输出结果<br>            insert(index, object)<br>                在列表的指定位置插入一个元素，该位置及后面的元素依次往后移动<br>                    a_list=[3,5,7,3,6,2,9,6,8,4,3]\na_list.insert(2,”ABC”)\nprint(a_list)<br>                        输出结果<br>            sort(key, reverse)<br>                对列表中的元素进行排序，前提是元素之间可比较，否则会报错，默认为升序  注意: sort()方法为永久性排序。<br>                    a_list=[3,5,7,3,6,2,9,6,8,4,3]\na_list.sort(reverse=True)\nprint(a_list)<br>                        输出结果<br>            sorted()<br>                a_list = [3,5,7,3,6,2,9,6,8,4,3]\nb_list = sorted(a_list)\nprint(“a_list:”, a_list)\nprint(“b_list:”, b_list)<br>                    输出结果<br>            pop([index])<br>                删除列表中指定位置的元素，默认删除最后一个，并返回删除的元素<br>                    a_list = [3,5,7,3,6,2,9,6,8,4,3]\nprint(a_list)\nprint(a_list.pop()) # 删除最后一个元素\nprint(a_list)\nprint(a_list.pop(1)) # 删除第2个元素\nprint(a_list)<br>                        输出结果<br>            remove(object)<br>                删除列表中第一次出现的指定元素<br>                    a_list = [3,5,7,3,6,2,9,6,8,4,3]\nprint(a_list)\nprint(a_list.remove(7))\nprint(a_list)<br>                        输出结果<br>            reverse()<br>                将列表进行逆序<br>                    a_list = [3,5,7,3,6,2,9,6,8,4,3]\nprint(a_list)\na_list.reverse()\nprint(a_list)<br>                        输出结果<br>            reversed()<br>                a_list = [3,5,7,3,6,2,9,6,8,4,3]\nprint(a_list)\n# reversed()生成一个新的迭代器\nb_list = reversed(a_list)\nprint(a_list)\n# 使用list函数转换新迭代器\nprint(list(b_list))<br>                    输出结果<br>            clear()<br>                清空列表内容<br>                    a_list = [3,5,7,3,6,2,9,6,8,4,3]\nprint(a_list)\na_list.clear()\nprint(a_list)<br>                        输出结果<br>            copy()<br>                将列表内容复制一份，是一种浅拷贝<br>                    a_list = [3,5,7,3,6,2,9,6,8,4,3]\nb_list = a_list.copy()\nprint(a_list)\na_list[1]=”ABC”\nprint(a_list)\nprint(b_list)<br>                        输出结果<br>        常见操作<br>            len(列表)<br>                获取列表中元素的个数<br>            max(列表)<br>                获取列表中最大的元素，前提是列表中元素可比较<br>            min(列表)<br>                获取列表中最小的元素，前提是列表中元素可比较<br>            sum(列表)<br>                对列表中的元素进行求和，前提是列表中元素可执行加法运算<br>            reversed(列表)<br>                将列表进行逆序，返回一个可迭代对象<br>            sorted(列表，key, reverse)<br>                对列表中的元素进行排序，返回一个新列表。前提是元素之间可比较，否则会报错，默认为升序<br>            列表1 + 列表2<br>                实现两个列表的合并，并返回一个新的列表<br>            列表 * 整数<br>                将列表中的内容复制若干份，并返回一个新的列表<br>            enumerate(列表)<br>                生成一个枚举对象，每个元素为索引和值形成的元组<br>                    school_list = [‘软件与物联网工程学院’, ‘信息管理学院’, ‘统计学院’, ‘虚拟现实产业学院’]\nprint(school_list)\nb_list = list(enumerate(school_list))\nprint(b_list)\nfor index, school_name in enumerate(school_list):\n    print(index, school_name)<br>                        输出结果<br>            zip(列表1, 列表2)<br>                生成一个zip对象，每个元素为列表中对应位置元素形成的元组<br>                    names = [‘张军’, ‘李华’, ‘王芳’, ‘匡明’]\nstu_no = [‘0001’, ‘0002’, ‘0003’]\ntalls = [168, 173, 166]\nstu_list = zip(stu_no, names, talls)\nfor name, no, tall in stu_list:\n    print(“%s: %s, %d cm.” %(no, name, tall))<br>                        输出结果<br>                            当序列长度不同时, 函数zip()将在最短的序列用完后停止拼接。<br>        推导式<br>            列表推导式利用已有列表快速生成满足特定需求的列表。列表推导式在逻辑上相当于一个循环，只是形式更加简洁。<br>    元组<br>        定义、创建和删除<br>            定义<br>                元组属于不可变序列，一旦创建，不可修改里面的元素。元组中元素放在一对圆括号“()”中，并用逗号分隔，元素类型可以不同。<br>            创建<br>                直接通过一对圆括号创建元组对象。<br>                使用tuple()函数将列表、range对象、字符串或其他类型的可迭代对象转换为元组。<br>            删除<br>                当不再使用时，可通过del命令删除元组，删除后不可再调用<br>                    del d_tuple\nprint(d_tuple)\n\n<br>                        NameError: name ‘d_tuple’ is not defined<br>        元组和列表的联系与区别<br>            元组和列表都属于可迭代对象，支持索引和切片操作<br>            支持重复运算（<em>）和合并运算（+）\n\n\n<br>            支持一些常见的序列处理函数，例如 len()、max()、min() 等\n\n<br>            二者之间可相互转化，可使用tuple()将列表转化为元组，list()将元组转化为列表<br>        生成器推导式<br>    字符串<br>        字符串是由字符组成的一个不可变序列，和元组作用类似，也支持索引、切片、重复、合并等操作。Python中统一了“字符”和“字符串”的概念，字符串的内容放在一对引号中，可以是一对单引号、双引号或三引号。<br>        字符串和元组的主要区别<br>            元组的元素可以是各种各样的数据类型（整形、浮点型、字符类型等） 字符串的每个元素都是字符<br>        字符串的创建<br>            直接通过一对引号创建字符串对象（对于一些特殊字符可使用转义字符）<br>                a_str=”hello”\nb_str=””<br>            使用str()函数将其他类型对象转化为字符串对象。<br>                c_str=str()\nd_str=str(20)\ne_str=str([1,2,3])<br>        字符表的常见方法及作用<br>            index(子串，起点，终点)<br>                在区域中查找子串，不存在时报错<br>            count(子串, 起点, 终点)<br>                统计指定区域中子串出现的次数，不存在时返回0<br>            split(分隔符, 最多分割次数)<br>                按照分隔符对字符串进行分割，返回结果列表<br>            lower()、upper()<br>                将字符串中所有字母转化为小（大）写字母，生成一个新字符串<br>            swapcase()<br>                转变字符串中所有字母的大小写，生成一个新字符串<br>            replace(旧字符, 新字符, 次数)<br>                替换字符串中的指定元素，可指定替换次数，默认替换所有<br>            join(可迭代对象)<br>                用字符串将可迭代对象中的多个元素拼接起来<br>            startswith(字符串, 起点, 终点)<br>                判断字符串的指定区域是否以指定的字符串开始，结果为True或False<br>            endswith(字符串, 起点, 终点)<br>                判断字符串的指定区域是否以指定的字符串结束，结果为True或False<br>            center(宽度, 填充字符)<br>                指定字符串显示宽度，内容居中显示，左右两边填充指定字符<br>            strip(字符)<br>                去除字符串前后的字符，默认去除前后空白<br>            isdigit()<br>                判断字符串中所有字符是否都为数字<br>            isalpha()<br>                判断字符串中所有字符是否都为字母，广义上的字母<br>            isalnum()<br>                判断字符串中所有字符是否都为数字或字母<br>            isidentifier()<br>                判断字符串是否为合法标识符<br>    集合<br>        集合的定义、创建和删除<br>            集合的定义<br>                列表、元组、字符串属于序列, 它们的元素都是有顺序的, 可以通过索引访问元素, 也可以支持切片操作, 元素是可以重复的。\n集合：不能存在重复元素。\n\n<br>            集合的创建<br>                直接通过一对大括号包裹元素创建集合对象<br>                使用set()函数将列表、range对象、字符串或其他类型的可迭代对象转换为集合，此时会删除其中的重复元素。<br>            集合的删除<br>                del c_set\n<br>        集合的常用方法<br>            add(元素)<br>                向集合中添加一个元素，元素为不可变类型，不能是列表、集合等可变类型，如果该元素已存在则没什么变化<br>            update(可迭代对象)<br>                将可迭代对象中的元素依次添加到集合中去，去除重复元素<br>            copy()<br>                将集合复制一份<br>            pop()<br>                随机删除一个元素，并返回删除的元素<br>                    a_set= {1,8,5,”A”,9}\nb_set=a_set.copy()\nprint(b_set.pop())\nprint(a_set)\nprint(b_set)<br>                        输出结果<br>            remove(元素)<br>                从集合中删除某个元素，如果该元素不存在，则抛出错误KeyError<br>                    a_set= {1,8,5,”A”,9}\nb_set=a_set.copy()\nprint(b_set.remove(8))\nprint(a_set)\nprint(b_set)<br>                        输出结果<br>            discard(元素)<br>                从集合中删除某个元素，如果该元素不存在，则什么都不做<br>                    a_set= {1,8,5,”A”,9}\nb_set=a_set.copy()\nprint(b_set.discard(8))\nprint(b_set.discard(6))\nprint(a_set)\nprint(b_set)<br>                        输出结果<br>            clear()<br>                清空集合的内容<br>                    a_set= {1,8,5,”A”,9}\nb_set=a_set.copy()\nb_set.clear()\nprint(a_set)\nprint(b_set)<br>                        输出结果<br>        集合运算<br>            交集<br>                集合A和集合B的交集由既属于A又属于B的元素构成<br>                    集合A &amp; 集合B\n集合A. intersection(集合B)<br>            并集<br>                集合A和集合B的并集由属于A或属于B的元素构成<br>                    集合A | 集合B\n集合A. union(集合B)<br>            差集<br>                集合A和集合B的差集由属于A但不属于B的元素构成<br>                    集合A - 集合B  \n集合A. difference(集合B)<br>            对称差集<br>                集合A和集合B的对称差集由A和B的差集或B和A的差集组成<br>                    集合A ^ 集合B\n集合A.symmetric_difference(集合B)<br>            子集判断<br>                判断集合A是否为集合B的子集<br>                    集合A.issubset(集合B)\n集合A &lt;= 集合B<br>            父集判断<br>                判断集合A是否为集合B的父集<br>                    集合A.issuperset(集合B)\n集合A &gt;= 集合B<br>        集合推导式<br>            集合推导式写法类似于列表推导式，只是用一对大括号表示，而不是一对中括号。同时会去除结果中的重复元素。<br>                a_set = {x</em>x for x in range(-5, 5)}\nb_set = {x<em>2 for x in [“A”, “B”, “A”, 2, 4, 2]}\nc_set = {x</em>2 for x in [“A”, “B”, “A”, 2, 4, 2] if str(x).isdigit()}\nd_set = {x for x in [2, 4, 6, 8] if x in [1, 3, 6, 4]}\n# 求交集\ne_set = {x for x in [2, 4, 6, 8] if x not in [1, 3, 6, 4]}\n# 求差集\nf_set = {x + y for x in [2, 4, 6, 8] for y in [1, 3, 5]}\n# 求并集\nprint(a_set)print(b_set)print(c_set)print(d_set)print(e_set)print(f_set)<br>                    输出结果<br>    字典<br>        字典的定义、创建<br>            定义<br>                字典是一种映射类型，由若干”键(key) : 值(value)”组成\n“键”和“值”之间用冒号隔开，所有“键值对”放在一对大括号“{ }”内，并用逗号分隔。其中“键”必须为不可变类型，在同一个字典中\n“键”必须是唯一的，但“值”可以重复。<br>            创建<br>                直接通过一对大括号包裹键值对创建字典对象<br>                使用dict()函数创建字典对象<br>        字典元素的访问<br>            字典是无序的，因此不支持索引、切片等操作。主要通过字典对象[键]获取对应的值。此外，字典还提供了获取所有键值对、所有键、所有值的方法。<br>                a_dict={“姓名”:”张三”,”年龄”:20,”体重”:172,”身高”:172}\nprint(“遍历key值1：”,end= “ “)\nfor key in a_dict:\n    print(a_dict[key],end= “ “)\nprint(“\\n遍历key值2：”,end= “ “)\nfor key in a_dict.keys():\n    print(a_dict[key],end= “ “)\nprint(“\\n遍历value值：”,end= “ “)\nfor value in a_dict.values():\n    print(value,end=” “)\nprint(“\\n遍历item值：”,end= “ “)\nfor item in a_dict.items():\n    print(item,end=” “)\nprint(“\\n遍历键值对1：”,end= “ “)\nfor key,value in a_dict.items():\n    print(key,”:”,value,end= “ “)\nprint(“\\n遍历键值对2：”,end= “ “)\nfor (key,value) in a_dict.items():\n    print(key,”:”,value,end=” “)<br>                    输出结果<br>        字典的常见方法<br>        字典推导式<br>        字典排序</p></h1>]]></content>
+        <content type="html"><![CDATA[<h2 id="神乃シズクのPython学习之路"><a href="#神乃シズクのPython学习之路" class="headerlink" title="神乃シズクのPython学习之路"></a>神乃シズクのPython学习之路</h2><img src="/img/Python/Python.png"><p>Python常用数据结构<br>    列表<br>        定义、创建和删除<br>            创建<br>                a_list = []\nb_list = [20, “张三”, 177.6]\nc_list = list(range(10))\nprint(a_list)\nprint(b_list)\nprint(c_list)\n\n\n\n\n\n<br>                    输出结果<br>                        直接用[]创建<br>                        使用list()函数将元组、range对象、字符串转换为列表<br>            删除<br>                通过del命令删除列表<br>                    a_list = [1,2,3]\ndel a_list<br>        元素的访问<br>            创建列表时，将会开辟一块连续空间<br>                正向索引<br>                    0，1，2，3…<br>                反向索引<br>                    -1，-2，-3，-4…<br>                a_list = list(range(2,10))\nprint(a_list)\nprint(a_list[6])\nprint(a_list[-2])\nls = [2022,”bat”,[10,’软件工程’],2023]\nprint(ls[2][-1][0])<br>                    输出结果<br>        切片操作<br>            a_list = list(range(1,10))\nprint(a_list[::1])\nprint(a_list[:1:])\nprint(a_list[1::])\nprint(a_list[::-1])\nprint(a_list[:-1:])\nprint(a_list[-1::])\nprint(a_list[::])<br>                输出结果<br>                    输入代码解释<br>        内容的修改操作<br>            对单个元素进行修改<br>                a_list = list(range(1,10))\na_list[2]=”ABC”\nprint(a_list)\na_list[4]=[11,12,13,14]\nprint(a_list)<br>                    输出结果<br>            对某个连续区域进行修改<br>                a_list=list(range(1,10))\na_list[1:6]=[15,20,25,45,80]\nprint(a_list)<br>                    输出结果<br>                a_list=list(range(1,10))\na_list[1:3]=[15,20,25,45,80]\nprint(a_list)<br>                    输出结果<br>                a_list = list(range(1, 10))\na_list[1:6:2] = [15,20,25]\nprint(a_list)<br>                    输出结果<br>        常见方法<br>            index(object)<br>                获取列表中某个对象第一次出现的位置，不存在时报错ValueError<br>                    a_list=[3,5,7,3,6,2,9,6,8,4,3]\nprint(a_list.index(6))\nprint(a_list.index(6,5,-1))<br>                        输出结果<br>                        index（value,start,end）<br>            count(object)<br>                统计列表中某个对象出现的次数，不存在时返回0<br>                    a_list=[3,5,7,3,6,2,9,6,8,4,3]\nprint(a_list.count(6))<br>                        输出结果<br>            append(object)<br>                在列表的末尾添加一个对象<br>                    a_list=[3,5,7,3,6,2,9,6,8,4,3]\na_list.append([33,44,55])\nprint(a_list)<br>                        输出结果<br>            extend(iterable)<br>                将一个可迭代对象合并到列表中去，注意和append()方法的区别<br>                    a_list=[3,5,7,3,6,2,9,6,8,4,3]\na_list.extend([33,44,55])\nprint(a_list)<br>                        输出结果<br>            insert(index, object)<br>                在列表的指定位置插入一个元素，该位置及后面的元素依次往后移动<br>                    a_list=[3,5,7,3,6,2,9,6,8,4,3]\na_list.insert(2,”ABC”)\nprint(a_list)<br>                        输出结果<br>            sort(key, reverse)<br>                对列表中的元素进行排序，前提是元素之间可比较，否则会报错，默认为升序  注意: sort()方法为永久性排序。<br>                    a_list=[3,5,7,3,6,2,9,6,8,4,3]\na_list.sort(reverse=True)\nprint(a_list)<br>                        输出结果<br>            sorted()<br>                a_list = [3,5,7,3,6,2,9,6,8,4,3]\nb_list = sorted(a_list)\nprint(“a_list:”, a_list)\nprint(“b_list:”, b_list)<br>                    输出结果<br>            pop([index])<br>                删除列表中指定位置的元素，默认删除最后一个，并返回删除的元素<br>                    a_list = [3,5,7,3,6,2,9,6,8,4,3]\nprint(a_list)\nprint(a_list.pop()) # 删除最后一个元素\nprint(a_list)\nprint(a_list.pop(1)) # 删除第2个元素\nprint(a_list)<br>                        输出结果<br>            remove(object)<br>                删除列表中第一次出现的指定元素<br>                    a_list = [3,5,7,3,6,2,9,6,8,4,3]\nprint(a_list)\nprint(a_list.remove(7))\nprint(a_list)<br>                        输出结果<br>            reverse()<br>                将列表进行逆序<br>                    a_list = [3,5,7,3,6,2,9,6,8,4,3]\nprint(a_list)\na_list.reverse()\nprint(a_list)<br>                        输出结果<br>            reversed()<br>                a_list = [3,5,7,3,6,2,9,6,8,4,3]\nprint(a_list)\n# reversed()生成一个新的迭代器\nb_list = reversed(a_list)\nprint(a_list)\n# 使用list函数转换新迭代器\nprint(list(b_list))<br>                    输出结果<br>            clear()<br>                清空列表内容<br>                    a_list = [3,5,7,3,6,2,9,6,8,4,3]\nprint(a_list)\na_list.clear()\nprint(a_list)<br>                        输出结果<br>            copy()<br>                将列表内容复制一份，是一种浅拷贝<br>                    a_list = [3,5,7,3,6,2,9,6,8,4,3]\nb_list = a_list.copy()\nprint(a_list)\na_list[1]=”ABC”\nprint(a_list)\nprint(b_list)<br>                        输出结果<br>        常见操作<br>            len(列表)<br>                获取列表中元素的个数<br>            max(列表)<br>                获取列表中最大的元素，前提是列表中元素可比较<br>            min(列表)<br>                获取列表中最小的元素，前提是列表中元素可比较<br>            sum(列表)<br>                对列表中的元素进行求和，前提是列表中元素可执行加法运算<br>            reversed(列表)<br>                将列表进行逆序，返回一个可迭代对象<br>            sorted(列表，key, reverse)<br>                对列表中的元素进行排序，返回一个新列表。前提是元素之间可比较，否则会报错，默认为升序<br>            列表1 + 列表2<br>                实现两个列表的合并，并返回一个新的列表<br>            列表 * 整数<br>                将列表中的内容复制若干份，并返回一个新的列表<br>            enumerate(列表)<br>                生成一个枚举对象，每个元素为索引和值形成的元组<br>                    school_list = [‘软件与物联网工程学院’, ‘信息管理学院’, ‘统计学院’, ‘虚拟现实产业学院’]\nprint(school_list)\nb_list = list(enumerate(school_list))\nprint(b_list)\nfor index, school_name in enumerate(school_list):\n    print(index, school_name)<br>                        输出结果<br>            zip(列表1, 列表2)<br>                生成一个zip对象，每个元素为列表中对应位置元素形成的元组<br>                    names = [‘张军’, ‘李华’, ‘王芳’, ‘匡明’]\nstu_no = [‘0001’, ‘0002’, ‘0003’]\ntalls = [168, 173, 166]\nstu_list = zip(stu_no, names, talls)\nfor name, no, tall in stu_list:\n    print(“%s: %s, %d cm.” %(no, name, tall))<br>                        输出结果<br>                            当序列长度不同时, 函数zip()将在最短的序列用完后停止拼接。<br>        推导式<br>            列表推导式利用已有列表快速生成满足特定需求的列表。列表推导式在逻辑上相当于一个循环，只是形式更加简洁。<br>    元组<br>        定义、创建和删除<br>            定义<br>                元组属于不可变序列，一旦创建，不可修改里面的元素。元组中元素放在一对圆括号“()”中，并用逗号分隔，元素类型可以不同。<br>            创建<br>                直接通过一对圆括号创建元组对象。<br>                使用tuple()函数将列表、range对象、字符串或其他类型的可迭代对象转换为元组。<br>            删除<br>                当不再使用时，可通过del命令删除元组，删除后不可再调用<br>                    del d_tuple\nprint(d_tuple)\n\n<br>                        NameError: name ‘d_tuple’ is not defined<br>        元组和列表的联系与区别<br>            元组和列表都属于可迭代对象，支持索引和切片操作<br>            支持重复运算（<em>）和合并运算（+）\n\n\n<br>            支持一些常见的序列处理函数，例如 len()、max()、min() 等\n\n<br>            二者之间可相互转化，可使用tuple()将列表转化为元组，list()将元组转化为列表<br>        生成器推导式<br>    字符串<br>        字符串是由字符组成的一个不可变序列，和元组作用类似，也支持索引、切片、重复、合并等操作。Python中统一了“字符”和“字符串”的概念，字符串的内容放在一对引号中，可以是一对单引号、双引号或三引号。<br>        字符串和元组的主要区别<br>            元组的元素可以是各种各样的数据类型（整形、浮点型、字符类型等） 字符串的每个元素都是字符<br>        字符串的创建<br>            直接通过一对引号创建字符串对象（对于一些特殊字符可使用转义字符）<br>                a_str=”hello”\nb_str=””<br>            使用str()函数将其他类型对象转化为字符串对象。<br>                c_str=str()\nd_str=str(20)\ne_str=str([1,2,3])<br>        字符表的常见方法及作用<br>            index(子串，起点，终点)<br>                在区域中查找子串，不存在时报错<br>            count(子串, 起点, 终点)<br>                统计指定区域中子串出现的次数，不存在时返回0<br>            split(分隔符, 最多分割次数)<br>                按照分隔符对字符串进行分割，返回结果列表<br>            lower()、upper()<br>                将字符串中所有字母转化为小（大）写字母，生成一个新字符串<br>            swapcase()<br>                转变字符串中所有字母的大小写，生成一个新字符串<br>            replace(旧字符, 新字符, 次数)<br>                替换字符串中的指定元素，可指定替换次数，默认替换所有<br>            join(可迭代对象)<br>                用字符串将可迭代对象中的多个元素拼接起来<br>            startswith(字符串, 起点, 终点)<br>                判断字符串的指定区域是否以指定的字符串开始，结果为True或False<br>            endswith(字符串, 起点, 终点)<br>                判断字符串的指定区域是否以指定的字符串结束，结果为True或False<br>            center(宽度, 填充字符)<br>                指定字符串显示宽度，内容居中显示，左右两边填充指定字符<br>            strip(字符)<br>                去除字符串前后的字符，默认去除前后空白<br>            isdigit()<br>                判断字符串中所有字符是否都为数字<br>            isalpha()<br>                判断字符串中所有字符是否都为字母，广义上的字母<br>            isalnum()<br>                判断字符串中所有字符是否都为数字或字母<br>            isidentifier()<br>                判断字符串是否为合法标识符<br>    集合<br>        集合的定义、创建和删除<br>            集合的定义<br>                列表、元组、字符串属于序列, 它们的元素都是有顺序的, 可以通过索引访问元素, 也可以支持切片操作, 元素是可以重复的。\n集合：不能存在重复元素。\n\n<br>            集合的创建<br>                直接通过一对大括号包裹元素创建集合对象<br>                使用set()函数将列表、range对象、字符串或其他类型的可迭代对象转换为集合，此时会删除其中的重复元素。<br>            集合的删除<br>                del c_set\n<br>        集合的常用方法<br>            add(元素)<br>                向集合中添加一个元素，元素为不可变类型，不能是列表、集合等可变类型，如果该元素已存在则没什么变化<br>            update(可迭代对象)<br>                将可迭代对象中的元素依次添加到集合中去，去除重复元素<br>            copy()<br>                将集合复制一份<br>            pop()<br>                随机删除一个元素，并返回删除的元素<br>                    a_set= {1,8,5,”A”,9}\nb_set=a_set.copy()\nprint(b_set.pop())\nprint(a_set)\nprint(b_set)<br>                        输出结果<br>            remove(元素)<br>                从集合中删除某个元素，如果该元素不存在，则抛出错误KeyError<br>                    a_set= {1,8,5,”A”,9}\nb_set=a_set.copy()\nprint(b_set.remove(8))\nprint(a_set)\nprint(b_set)<br>                        输出结果<br>            discard(元素)<br>                从集合中删除某个元素，如果该元素不存在，则什么都不做<br>                    a_set= {1,8,5,”A”,9}\nb_set=a_set.copy()\nprint(b_set.discard(8))\nprint(b_set.discard(6))\nprint(a_set)\nprint(b_set)<br>                        输出结果<br>            clear()<br>                清空集合的内容<br>                    a_set= {1,8,5,”A”,9}\nb_set=a_set.copy()\nb_set.clear()\nprint(a_set)\nprint(b_set)<br>                        输出结果<br>        集合运算<br>            交集<br>                集合A和集合B的交集由既属于A又属于B的元素构成<br>                    集合A &amp; 集合B\n集合A. intersection(集合B)<br>            并集<br>                集合A和集合B的并集由属于A或属于B的元素构成<br>                    集合A | 集合B\n集合A. union(集合B)<br>            差集<br>                集合A和集合B的差集由属于A但不属于B的元素构成<br>                    集合A - 集合B  \n集合A. difference(集合B)<br>            对称差集<br>                集合A和集合B的对称差集由A和B的差集或B和A的差集组成<br>                    集合A ^ 集合B\n集合A.symmetric_difference(集合B)<br>            子集判断<br>                判断集合A是否为集合B的子集<br>                    集合A.issubset(集合B)\n集合A &lt;= 集合B<br>            父集判断<br>                判断集合A是否为集合B的父集<br>                    集合A.issuperset(集合B)\n集合A &gt;= 集合B<br>        集合推导式<br>            集合推导式写法类似于列表推导式，只是用一对大括号表示，而不是一对中括号。同时会去除结果中的重复元素。<br>                a_set = {x</em>x for x in range(-5, 5)}\nb_set = {x<em>2 for x in [“A”, “B”, “A”, 2, 4, 2]}\nc_set = {x</em>2 for x in [“A”, “B”, “A”, 2, 4, 2] if str(x).isdigit()}\nd_set = {x for x in [2, 4, 6, 8] if x in [1, 3, 6, 4]}\n# 求交集\ne_set = {x for x in [2, 4, 6, 8] if x not in [1, 3, 6, 4]}\n# 求差集\nf_set = {x + y for x in [2, 4, 6, 8] for y in [1, 3, 5]}\n# 求并集\nprint(a_set)print(b_set)print(c_set)print(d_set)print(e_set)print(f_set)<br>                    输出结果<br>    字典<br>        字典的定义、创建<br>            定义<br>                字典是一种映射类型，由若干”键(key) : 值(value)”组成\n“键”和“值”之间用冒号隔开，所有“键值对”放在一对大括号“{ }”内，并用逗号分隔。其中“键”必须为不可变类型，在同一个字典中\n“键”必须是唯一的，但“值”可以重复。<br>            创建<br>                直接通过一对大括号包裹键值对创建字典对象<br>                使用dict()函数创建字典对象<br>        字典元素的访问<br>            字典是无序的，因此不支持索引、切片等操作。主要通过字典对象[键]获取对应的值。此外，字典还提供了获取所有键值对、所有键、所有值的方法。<br>                a_dict={“姓名”:”张三”,”年龄”:20,”体重”:172,”身高”:172}\nprint(“遍历key值1：”,end= “ “)\nfor key in a_dict:\n    print(a_dict[key],end= “ “)\nprint(“\\n遍历key值2：”,end= “ “)\nfor key in a_dict.keys():\n    print(a_dict[key],end= “ “)\nprint(“\\n遍历value值：”,end= “ “)\nfor value in a_dict.values():\n    print(value,end=” “)\nprint(“\\n遍历item值：”,end= “ “)\nfor item in a_dict.items():\n    print(item,end=” “)\nprint(“\\n遍历键值对1：”,end= “ “)\nfor key,value in a_dict.items():\n    print(key,”:”,value,end= “ “)\nprint(“\\n遍历键值对2：”,end= “ “)\nfor (key,value) in a_dict.items():\n    print(key,”:”,value,end=” “)<br>                    输出结果<br>        字典的常见方法<br>        字典推导式<br>        字典排序</p>]]></content>
       
       
       <categories>
           
           <category> Python学习之路 </category>
           
+          <category> Python常用数据结构 </category>
+          
       </categories>
       
+      
+        <tags>
+            
+            <tag> Python </tag>
+            
+            <tag> 数据结构 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -31,6 +41,8 @@
       
       
       <categories>
+          
+          <category> 业务课二 </category>
           
           <category> 交互设计 </category>
           
@@ -51,10 +63,20 @@
       
       <categories>
           
-          <category> 交互设计 </category>
+          <category> 业务课二 </category>
+          
+          <category> 交互设计超越人机交互 </category>
           
       </categories>
       
+      
+        <tags>
+            
+            <tag> 业务课二 </tag>
+            
+            <tag> 交互设计 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -69,6 +91,8 @@
       
       
       <categories>
+          
+          <category> 业务课一 </category>
           
           <category> 工业设计史 </category>
           
@@ -89,6 +113,8 @@
       
       <categories>
           
+          <category> 业务课一 </category>
+          
           <category> 工业设计史 </category>
           
       </categories>
@@ -108,10 +134,20 @@
       
       <categories>
           
-          <category> 日语N1 </category>
+          <category> 日语 </category>
+          
+          <category> 日语N1笔记 </category>
           
       </categories>
       
+      
+        <tags>
+            
+            <tag> 日语学习 </tag>
+            
+            <tag> N1 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -127,10 +163,20 @@
       
       <categories>
           
-          <category> 日语N1 </category>
+          <category> 日语 </category>
+          
+          <category> 日语N1笔记 </category>
           
       </categories>
       
+      
+        <tags>
+            
+            <tag> 日语学习 </tag>
+            
+            <tag> N1 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -146,10 +192,20 @@
       
       <categories>
           
-          <category> 日语N1 </category>
+          <category> 日语 </category>
+          
+          <category> 日语N1笔记 </category>
           
       </categories>
       
+      
+        <tags>
+            
+            <tag> 日语学习 </tag>
+            
+            <tag> N1 </tag>
+            
+        </tags>
       
     </entry>
     
