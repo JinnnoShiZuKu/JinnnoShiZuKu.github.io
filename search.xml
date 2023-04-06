@@ -4,39 +4,6 @@
   
     
     <entry>
-      <title>考研信息汇总页</title>
-      <link href="/2023/04/04/%E8%80%83%E7%A0%94%E4%BF%A1%E6%81%AF%E6%B1%87%E6%80%BB%E9%A1%B5/"/>
-      <url>/2023/04/04/%E8%80%83%E7%A0%94%E4%BF%A1%E6%81%AF%E6%B1%87%E6%80%BB%E9%A1%B5/</url>
-      
-        <content type="html"><![CDATA[<h2 id="已经决定好的工作就不改了-w-↑"><a href="#已经决定好的工作就不改了-w-↑" class="headerlink" title="已经决定好的工作就不改了=w=↑"></a>已经决定好的工作就不改了=w=↑</h2><h1>考研安排</h1><h2>时间表</h2><img src="/img/graduate/考研安排.png"><h2>资料汇总</h2><img src="/img/graduate/考研资料汇总.png"><h1>历年报录比</h1><img src="/img/graduate/baolubi2017-2019.png"><img src="/img/graduate/baolubi2021.png"><img src="/img/graduate/baolubi2022.png">]]></content>
-      
-      
-      <categories>
-          
-          <category> 考研 </category>
-          
-          <category> 考研信息 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 考研 </tag>
-            
-            <tag> 院校报录比 </tag>
-            
-            <tag> 时间安排 </tag>
-            
-            <tag> 考研资料 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Python学习之路</title>
       <link href="/2023/04/03/Python%E5%B8%B8%E7%94%A8%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
       <url>/2023/04/03/Python%E5%B8%B8%E7%94%A8%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</url>
@@ -80,6 +47,39 @@
           <category> 业务课二 </category>
           
           <category> 交互设计 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 考研 </tag>
+            
+            <tag> 业务课二 </tag>
+            
+            <tag> 交互设计 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>交互设计-超越人机交互笔记</title>
+      <link href="/2023/02/28/%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1/"/>
+      <url>/2023/02/28/%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1/</url>
+      
+        <content type="html"><![CDATA[<h1>交互设计</h1><img src="/img/interaction_design/交互设计.png">  <h3>交互设计五要素</h3><pre><code>    用户    目的    场景    行为    媒介</code></pre>  <h3>交互设计应用领域</h3><pre><code>    人机交互    车联网交互    智能硬件交互    新零售行业    AR/VR    移动互联网交互</code></pre>  <h3>如何让目标用户在典型场景中</h3>            <pre><code>    1.目标用户        1.市场调研        2.用户调研        3.用户画像构建    2.典型场景        1.场景设计与分析    3.产品        1.竞品分析        2.产品定位    4.高效        1.任务分析        2.    5.舒适        1.设计心理学        2.认知心理学        3.色彩构成        4.设计规范    6.使用</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 考研 </category>
+          
+          <category> 业务课二 </category>
+          
+          <category> 交互设计超越人机交互 </category>
           
       </categories>
       
@@ -157,39 +157,6 @@
             <tag> 业务课一 </tag>
             
             <tag> 工业设计史 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>交互设计-超越人机交互笔记</title>
-      <link href="/2023/02/28/%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1/"/>
-      <url>/2023/02/28/%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1/</url>
-      
-        <content type="html"><![CDATA[<h1>交互设计</h1><img src="/img/interaction_design/交互设计.png">  <h3>交互设计五要素</h3><pre><code>    用户    目的    场景    行为    媒介</code></pre>  <h3>交互设计应用领域</h3><pre><code>    人机交互    车联网交互    智能硬件交互    新零售行业    AR/VR    移动互联网交互</code></pre>  <h3>如何让目标用户在典型场景中</h3>            <pre><code>    1.目标用户        1.市场调研        2.用户调研        3.用户画像构建    2.典型场景        1.场景设计与分析    3.产品        1.竞品分析        2.产品定位    4.高效        1.任务分析        2.    5.舒适        1.设计心理学        2.认知心理学        3.色彩构成        4.设计规范    6.使用</code></pre>]]></content>
-      
-      
-      <categories>
-          
-          <category> 考研 </category>
-          
-          <category> 业务课二 </category>
-          
-          <category> 交互设计超越人机交互 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 考研 </tag>
-            
-            <tag> 业务课二 </tag>
-            
-            <tag> 交互设计 </tag>
             
         </tags>
       
